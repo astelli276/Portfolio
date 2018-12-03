@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CV</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="header" id="myHeader">
+		<header><div id="sidenav" class="sidenav">
+			<a href="javascript:void(0)"
+			class="closebtn"
+			onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="overMij.html">Over Mij</a>
+			<a href="cv.html">CV</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		
+		<h1><span onclick="openNav()">&#9776;</span><center>Astrid de Vries</h1></header></div></center>
+		<center><h2>CV</h2></center>
+
+		<h3>Projecten waaraan ik gewerkt heb</h3>
+
+		<div class="tab">
+		  <button class="tablinks" onclick="openProject(event, 'html')" id="defaultOpen">Html/Css</button>
+		  <button class="tablinks" onclick="openProject(event, 'javascript')">Javascript</button>
+		  <button class="tablinks" onclick="openProject(event, 'python')">Python</button>
+		</div>
+
+		<div id="html" class="tabcontent">
+		  <h3>Html/css</h3>
+		  <ul>
+		  	<li>T4Y website</li>
+		  	<li>Deze website</li>
+		  </ul>
+		</div>
+
+		<div id="javascript" class="tabcontent">
+		  <h3>Javascript</h3>
+		  <p>dingen</p> 
+		</div>
+
+		<div id="python" class="tabcontent">
+		  <h3>Python</h3>
+		  <ul>
+		  	<li>Calculator</li>
+		  	<li>Dobbelsteen</li>
+		  	<li>Raad nummer spel</li>
+		  </ul>
+		</div>
+
+		<script src="script.js"></script>
+
+
+	</body>
+</html>
