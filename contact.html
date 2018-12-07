@@ -3,6 +3,7 @@
 	<head>
 		<title>Contact</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
 	</head>
 	<body>
 		<div class="header" id="myHeader">
@@ -19,10 +20,18 @@
 		<h1><span onclick="openNav()">&#9776;</span><center>Astrid de Vries</h1></header></div></center>
 
 		<center>
-			<h2>Contact</h2>
-			<button onclick="window.location.href='http://www.google.nl/'">Home</button>
-			<button onclick="window.location.href='http://www.google.nl/'">LinkdIn</button>
-		</center>
+			<center><h2>Wilt u contact met mij opnemen?</h2>
+			<form>
+				<input class="contact" type="'text" name="naam" placeholder="Uw naam"><br>
+				<br>
+				<input class="contact" type="text" name="email" placeholder="Uw E-mail"><br>
+				<br>
+				<textarea id="contact" type="text" name="bericht" placeholder="Bericht" rows="4"></textarea><br>
+				<br>
+				<br>
+				<input class="button" type="submit" value="Verstuur"><br>
+			</form></center>
+
 
 		<script src="script.js"></script>
 	</body>

@@ -3,8 +3,9 @@
 	<head>
 		<title>Over mij</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body>
+	<body onload="brython(0)">
 		<div class="header" id="myHeader">
 		<header><div id="sidenav" class="sidenav">
 			<a href="javascript:void(0)"
@@ -17,6 +18,93 @@
 		</div>
 		
 		<h1><span onclick="openNav()">&#9776;</span><center>Astrid de Vries</h1></header></div></center>
+		<center><h2>Over mij</h2>
+			<p id="over">Mijn naam is Astrid de Vries. Ik ben een beginnend studente applicatie ontwikkeling. De<br>laatste maanden heb ik al enige ervaring gedaan met HTML, CSS, Javascript en Python.<br> Hierdoor kan ik al kleine programmatjes schrijven met deze programmeertalen.<br>
+			Na afronding van mijn VMBO-T wilde ik graag in een opleiding voor een creatief beroep.<br> Aangezien ik ook ge&iumlnteresseerd ben in computers past de opleiding Applicatie ontwikkelaar<br> helemaal bij mij. Hierin kan ik mijn creativiteit, enthousiasme en doorzettingsvermogen<br> kwijt. Ik heb de afgelopen maanden dan ook meer geleerd dan ik verwachtte.<br>
+
+			</p></center>
+		<h3>Projecten waaraan ik gewerkt heb</h3>
+
+		<div class="tab">
+		  <button class="tablinks" onclick="openProject(event, 'html')" id="defaultOpen">Html/Css</button>
+		  <button class="tablinks" onclick="openProject(event, 'javascript')">Javascript</button>
+		  <button class="tablinks" onclick="openProject(event, 'python')">Python</button>
+		</div>
+
+		<div id="html" class="tabcontent">
+			  <span onclick="this.parentElement.style.display='none'" class="rechts">&times</span>
+			<p>Ik heb redelijk wat ervaring met HTML en CSS. Hier zijn screenshots van een site die ik heb gemaakt met HTML en CSS.</p><br>
+			<div class="slideshow-container">
+			  <div class="mySlides fade">
+			    <div class="numbertext">1 / 3</div>
+			    <img src="t4yss.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">2 / 3</div>
+			    <img src="t4yss2.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">3 / 3</div>
+			    <img src="t4yss3.png" style="width:100%">
+			  </div>
+
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+
+		<div id="javascript" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="rechts">&times</span>
+			<h3>Javascript</h3>
+			<p>Ook heb ik enige ervaring met Javascript.</p>
+			<br>
+			<center><div id="out"></div>
+			<input type="text" id="in">
+			<br>
+			<br>
+			<button onclick="een()">1</button>
+			<button onclick="twee()">2</button>
+			<button onclick="drie()">3</button>
+			<button onclick="plus()">+</button>
+			<br>
+			<button onclick="vier()">4</button>
+			<button onclick="vijf()">5</button>
+			<button onclick="zes()">6</button>
+			<button onclick="min()">-</button>
+			<br>
+			<button onclick="zeven()">7</button>
+			<button onclick="acht()">8</button>
+			<button onclick="negen()">9</button>
+			<button onclick="keer()">*</button>
+			<br>
+			<button onclick="komma()">,</button>
+			<button onclick="nul()">0</button>
+			<button onclick="is()">=</button>
+			<button onclick="delen()">/</button>
+			<br>
+			<button onclick="ce()">CE</button> 
+			</div></center>
+
+		<div id="python" class="tabcontent">
+			<span onclick="this.parentElement.style.display='none'" class="rechts">&times</span>
+			<h3>Python</h3>
+			<p>Ik heb een beetje ervaring met python. Hier is een voorbeeld van wat ik kan.</p>
+			<center><h2>Dobbelsteen</h2>
+			<button id="dobbelsteen">Gooi</button>
+			<br>
+			<br>
+			<div id="dobbel"></div></center>
+			<script src="https://brython.info/src/brython.js"></script>
+			<script src="https://brython.info/src/brython_stdlib.js"></script>
+			<script type="text/python" src="rollingDice.py"></script>
+		</div>
+
+
+
 		<script src="script.js"></script>
+
+
 	</body>
 </html>
